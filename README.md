@@ -28,7 +28,7 @@ As of yet there is no command-line help screen, but the following flags are avai
 * `-p`|`--password`: NickServ identification password
 * `-m`|`--master`: login of the bot owner for remote control
 
-**_Be sure to change master and home channel!_**
+**_Be sure to change master and home channel! Remember to escape the #channel octhorpe!_ **
 
 There is currently also a hard-coded list of logins which are allowed to perform some non-essential commands via channel messages.
 
