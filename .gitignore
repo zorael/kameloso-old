@@ -9,6 +9,7 @@ _darcs/
 .hg/
 .bzr/
 .dub/
+.kdev4/
 
 *.o
 *.a
@@ -21,3 +22,5 @@ qrc_*.cpp
 *~
 .*.kate-swp
 .*.swp
+
+/kameloso
