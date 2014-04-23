@@ -1,0 +1,23 @@
+# List taken from kdevelop default project filter
+
+.git/
+CVS/
+.svn/
+_svn/
+SCCS/
+_darcs/
+.hg/
+.bzr/
+.dub/
+
+*.o
+*.a
+*.so
+*.so.*
+moc_*.cpp
+*.moc
+ui_*.h
+qrc_*.cpp
+*~
+.*.kate-swp
+.*.swp

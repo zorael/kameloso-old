@@ -1,0 +1,63 @@
+{
+    "name": "kameloso",
+    "description": "An experimental IRC bot",
+    "version": "~master",
+
+    "copyright": "Copyright © 2014, JR",
+    "authors": ["zorael"],
+
+    "targetName":     "kameloso",
+    "targetFileName": "kameloso",
+    "targetType":     "executable",
+    "configuration":  "application",
+    "mainSourceFile": "source/main.d",
+    "license": "MIT",
+
+    "buildTypes": {
+        "release": {
+            "buildOptions": [
+                "debugInfo",
+                "releaseMode",
+                "optimize",
+                "inline"
+            ]
+        },
+        "debug": {
+            "targetName": "kameloso-dbg",
+            "targetFileName": "kameloso-dbg",
+            "buildOptions": [
+                "debugMode",
+                "debugInfo",
+                "optimize"
+            ]
+        }
+    },
+
+    "dflags": [
+        "-L--no-warn-search-mismatch",
+        "-L--export-dynamic"
+    ],
+    "cflags": [
+        "-g -O2 -pipe",
+        "-march=native -mavx -mmmx",
+        "-fstack-protector --param=ssp-buffer-size=4",
+        "-D_FORTIFY_SOURCE=2 ",
+        "-fPIC",
+        "-flto=8 -fuse-linker-plugin"
+    ],
+    "lflags": [
+        "-O1",
+        "--sort-common",
+        "-z,relro",
+        "--as-needed",
+        "-Bsymbolic-functions",
+        "-Bsymbolic",
+        "--gc-sections",
+        "--print-gc-sections",
+        "--enable-new-dtags",
+
+    ],
+
+    "dependencies": {
+    }
+}
