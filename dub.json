@@ -19,7 +19,9 @@
                 "debugInfo",
                 "releaseMode",
                 "optimize",
-                "inline"
+                "inline",
+                "noBoundsChecks",
+                "alwaysStackFrame"
             ]
         },
         "debug": {
@@ -28,7 +30,8 @@
             "buildOptions": [
                 "debugMode",
                 "debugInfo",
-                "optimize"
+                "optimize",
+                "alwaysStackFrame"
             ]
         }
     },
@@ -52,8 +55,6 @@
         "--as-needed",
         "-Bsymbolic-functions",
         "-Bsymbolic",
-        "--gc-sections",
-        "--print-gc-sections",
         "--enable-new-dtags",
 
     ],
