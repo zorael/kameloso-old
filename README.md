@@ -41,4 +41,6 @@ There is currently also a hard-coded list of logins which are allowed to perform
 * move from using homebrew `Yarn!T` to using standard library `Appender!T`
 * figure out how to do plugins in separate threads \*correctly\*
 * improve disconnect/reconnect logic (requires direct `Socket` use)
+* unit tests
+* documentation
 * ...basic rework of everything
